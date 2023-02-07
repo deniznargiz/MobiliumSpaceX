@@ -1,0 +1,974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BF758C1700E9C2AD4E3F43A /* Pods_MobiliumSpaceXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6691979A8395E59453110E /* Pods_MobiliumSpaceXTests.framework */; };
+		8A7810432990E9CC00D453F3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7810422990E9CC00D453F3 /* Endpoint.swift */; };
+		8A78104829911B2E00D453F3 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78104729911B2E00D453F3 /* NSObject+Extension.swift */; };
+		8A78104C29911CA800D453F3 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78104B29911CA800D453F3 /* ViewControllerFactory.swift */; };
+		8A78104F29911E0700D453F3 /* LaunchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78104E29911E0700D453F3 /* LaunchDetailViewModel.swift */; };
+		8EFBFA6E97B814C5D070AA35 /* Pods_MobiliumSpaceX_MobiliumSpaceXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE258FC9E8104E3AA8D4ACC /* Pods_MobiliumSpaceX_MobiliumSpaceXUITests.framework */; };
+		D3372EB6298E811D00BC9D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3372EB5298E811D00BC9D47 /* AppDelegate.swift */; };
+		D3372EB8298E811D00BC9D47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3372EB7298E811D00BC9D47 /* SceneDelegate.swift */; };
+		D3372EBF298E811D00BC9D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3372EBE298E811D00BC9D47 /* Assets.xcassets */; };
+		D3372ECD298E811D00BC9D47 /* MobiliumSpaceXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3372ECC298E811D00BC9D47 /* MobiliumSpaceXTests.swift */; };
+		D3372ED7298E811D00BC9D47 /* MobiliumSpaceXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3372ED6298E811D00BC9D47 /* MobiliumSpaceXUITests.swift */; };
+		D3372ED9298E811D00BC9D47 /* MobiliumSpaceXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3372ED8298E811D00BC9D47 /* MobiliumSpaceXUITestsLaunchTests.swift */; };
+		D3372EFD298E919500BC9D47 /* LaunchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3372EFB298E919500BC9D47 /* LaunchListViewController.swift */; };
+		D3372EFE298E919500BC9D47 /* LaunchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3372EFC298E919500BC9D47 /* LaunchListViewController.xib */; };
+		D3372F0A298E92B400BC9D47 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3372F05298E92B000BC9D47 /* Inter-Black.ttf */; };
+		D3372F0B298E92BB00BC9D47 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3372F08298E92B000BC9D47 /* Inter-Bold.ttf */; };
+		D3372F0C298E92BF00BC9D47 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3372F01298E92B000BC9D47 /* Inter-ExtraBold.ttf */; };
+		D3372F0D298E92C100BC9D47 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3372F06298E92B000BC9D47 /* Inter-ExtraLight.ttf */; };
+		D3372F0E298E92C400BC9D47 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3372F03298E92B000BC9D47 /* Inter-Light.ttf */; };
+		D3372F0F298E92C700BC9D47 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3372F09298E92B000BC9D47 /* Inter-Medium.ttf */; };
+		D3372F10298E92C900BC9D47 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3372F07298E92B000BC9D47 /* Inter-Regular.ttf */; };
+		D3372F11298E92CC00BC9D47 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3372F02298E92B000BC9D47 /* Inter-SemiBold.ttf */; };
+		D3372F12298E92CF00BC9D47 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3372F04298E92B000BC9D47 /* Inter-Thin.ttf */; };
+		D33978A1299160E0008E1E46 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33978A0299160E0008E1E46 /* Date+Extension.swift */; };
+		D359F8EC298ED24B00F8AB5D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359F8EB298ED24B00F8AB5D /* Service.swift */; };
+		D359F8F1298ED44800F8AB5D /* LaunchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359F8F0298ED44800F8AB5D /* LaunchListViewModel.swift */; };
+		D359F90B298EDC8400F8AB5D /* LaunchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359F904298EDC8400F8AB5D /* LaunchResponse.swift */; };
+		D39C5DDC298E967700022A96 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39C5DDB298E967700022A96 /* UIColor+Extension.swift */; };
+		D3B808BF299249B400E102E4 /* QueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B808BE299249B400E102E4 /* QueryResponse.swift */; };
+		D3CC37032991456C00000C52 /* PastLaunchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC37022991456C00000C52 /* PastLaunchResponse.swift */; };
+		D3F09E94298E97DD0086F42E /* ColorAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F09E93298E97DD0086F42E /* ColorAssests.xcassets */; };
+		D3F09E98298E99C60086F42E /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F09E96298E99C60086F42E /* LaunchTableViewCell.swift */; };
+		D3F09E99298E99C60086F42E /* LaunchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F09E97298E99C60086F42E /* LaunchTableViewCell.xib */; };
+		D3F09E9C298E9C870086F42E /* RoundedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F09E9B298E9C870086F42E /* RoundedUIView.swift */; };
+		D3F09E9E298E9D7E0086F42E /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F09E9D298E9D7E0086F42E /* RoundedImageView.swift */; };
+		D3F09EA2298EA9F10086F42E /* LaunchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F09EA0298EA9F10086F42E /* LaunchDetailViewController.swift */; };
+		D3F09EA3298EA9F10086F42E /* LaunchDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F09EA1298EA9F10086F42E /* LaunchDetailViewController.xib */; };
+		F831F41157D15E0D51AE9ECF /* Pods_MobiliumSpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3E424EC96842039DB86986 /* Pods_MobiliumSpaceX.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3372EC9298E811D00BC9D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3372EAA298E811D00BC9D47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3372EB1298E811D00BC9D47;
+			remoteInfo = MobiliumSpaceX;
+		};
+		D3372ED3298E811D00BC9D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3372EAA298E811D00BC9D47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3372EB1298E811D00BC9D47;
+			remoteInfo = MobiliumSpaceX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BB18021A0CD52EF98E02F7B /* Pods-MobiliumSpaceX-MobiliumSpaceXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiliumSpaceX-MobiliumSpaceXUITests.release.xcconfig"; path = "Target Support Files/Pods-MobiliumSpaceX-MobiliumSpaceXUITests/Pods-MobiliumSpaceX-MobiliumSpaceXUITests.release.xcconfig"; sourceTree = "<group>"; };
+		127E3DE1F8DBF26444E44D35 /* Pods-MobiliumSpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiliumSpaceX.debug.xcconfig"; path = "Target Support Files/Pods-MobiliumSpaceX/Pods-MobiliumSpaceX.debug.xcconfig"; sourceTree = "<group>"; };
+		1F9A4EE04F1F8E8B509BCCC9 /* Pods-MobiliumSpaceXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiliumSpaceXTests.debug.xcconfig"; path = "Target Support Files/Pods-MobiliumSpaceXTests/Pods-MobiliumSpaceXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BE258FC9E8104E3AA8D4ACC /* Pods_MobiliumSpaceX_MobiliumSpaceXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiliumSpaceX_MobiliumSpaceXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF47299B9D20AC091BAC112 /* Pods-MobiliumSpaceX-MobiliumSpaceXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiliumSpaceX-MobiliumSpaceXUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobiliumSpaceX-MobiliumSpaceXUITests/Pods-MobiliumSpaceX-MobiliumSpaceXUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F3E424EC96842039DB86986 /* Pods_MobiliumSpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiliumSpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8609B211E51986BE1AF3ADD6 /* Pods-MobiliumSpaceXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiliumSpaceXTests.release.xcconfig"; path = "Target Support Files/Pods-MobiliumSpaceXTests/Pods-MobiliumSpaceXTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A7810422990E9CC00D453F3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		8A78104729911B2E00D453F3 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		8A78104B29911CA800D453F3 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		8A78104E29911E0700D453F3 /* LaunchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewModel.swift; sourceTree = "<group>"; };
+		905C2B9E255FF8A3554BCDEC /* Pods-MobiliumSpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiliumSpaceX.release.xcconfig"; path = "Target Support Files/Pods-MobiliumSpaceX/Pods-MobiliumSpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		9C6691979A8395E59453110E /* Pods_MobiliumSpaceXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiliumSpaceXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3372EB2298E811D00BC9D47 /* MobiliumSpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiliumSpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3372EB5298E811D00BC9D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3372EB7298E811D00BC9D47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D3372EBE298E811D00BC9D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3372EC3298E811D00BC9D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3372EC8298E811D00BC9D47 /* MobiliumSpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiliumSpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3372ECC298E811D00BC9D47 /* MobiliumSpaceXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiliumSpaceXTests.swift; sourceTree = "<group>"; };
+		D3372ED2298E811D00BC9D47 /* MobiliumSpaceXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiliumSpaceXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3372ED6298E811D00BC9D47 /* MobiliumSpaceXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiliumSpaceXUITests.swift; sourceTree = "<group>"; };
+		D3372ED8298E811D00BC9D47 /* MobiliumSpaceXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiliumSpaceXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3372EFB298E919500BC9D47 /* LaunchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewController.swift; sourceTree = "<group>"; };
+		D3372EFC298E919500BC9D47 /* LaunchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchListViewController.xib; sourceTree = "<group>"; };
+		D3372F01298E92B000BC9D47 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D3372F02298E92B000BC9D47 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		D3372F03298E92B000BC9D47 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		D3372F04298E92B000BC9D47 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		D3372F05298E92B000BC9D47 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		D3372F06298E92B000BC9D47 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D3372F07298E92B000BC9D47 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		D3372F08298E92B000BC9D47 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		D3372F09298E92B000BC9D47 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		D33978A0299160E0008E1E46 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D359F8EB298ED24B00F8AB5D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		D359F8F0298ED44800F8AB5D /* LaunchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModel.swift; sourceTree = "<group>"; };
+		D359F904298EDC8400F8AB5D /* LaunchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchResponse.swift; sourceTree = "<group>"; };
+		D39C5DDB298E967700022A96 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D3B808BE299249B400E102E4 /* QueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResponse.swift; sourceTree = "<group>"; };
+		D3CC37022991456C00000C52 /* PastLaunchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchResponse.swift; sourceTree = "<group>"; };
+		D3F09E93298E97DD0086F42E /* ColorAssests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssests.xcassets; sourceTree = "<group>"; };
+		D3F09E96298E99C60086F42E /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
+		D3F09E97298E99C60086F42E /* LaunchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchTableViewCell.xib; sourceTree = "<group>"; };
+		D3F09E9B298E9C870086F42E /* RoundedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIView.swift; sourceTree = "<group>"; };
+		D3F09E9D298E9D7E0086F42E /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		D3F09EA0298EA9F10086F42E /* LaunchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewController.swift; sourceTree = "<group>"; };
+		D3F09EA1298EA9F10086F42E /* LaunchDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3372EAF298E811D00BC9D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F831F41157D15E0D51AE9ECF /* Pods_MobiliumSpaceX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3372EC5298E811D00BC9D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF758C1700E9C2AD4E3F43A /* Pods_MobiliumSpaceXTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3372ECF298E811D00BC9D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EFBFA6E97B814C5D070AA35 /* Pods_MobiliumSpaceX_MobiliumSpaceXUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11F1BCE7516B4BB7C7985B60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F3E424EC96842039DB86986 /* Pods_MobiliumSpaceX.framework */,
+				6BE258FC9E8104E3AA8D4ACC /* Pods_MobiliumSpaceX_MobiliumSpaceXUITests.framework */,
+				9C6691979A8395E59453110E /* Pods_MobiliumSpaceXTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		756B7F968E1ABD8A48A37E94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				127E3DE1F8DBF26444E44D35 /* Pods-MobiliumSpaceX.debug.xcconfig */,
+				905C2B9E255FF8A3554BCDEC /* Pods-MobiliumSpaceX.release.xcconfig */,
+				6FF47299B9D20AC091BAC112 /* Pods-MobiliumSpaceX-MobiliumSpaceXUITests.debug.xcconfig */,
+				0BB18021A0CD52EF98E02F7B /* Pods-MobiliumSpaceX-MobiliumSpaceXUITests.release.xcconfig */,
+				1F9A4EE04F1F8E8B509BCCC9 /* Pods-MobiliumSpaceXTests.debug.xcconfig */,
+				8609B211E51986BE1AF3ADD6 /* Pods-MobiliumSpaceXTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A781046299115A400D453F3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D3372EB5298E811D00BC9D47 /* AppDelegate.swift */,
+				D3372EB7298E811D00BC9D47 /* SceneDelegate.swift */,
+				D3372EC3298E811D00BC9D47 /* Info.plist */,
+				D3F09E9A298E9C740086F42E /* Components */,
+				D3372EF0298E83D400BC9D47 /* Service */,
+				D3372EF1298E83E900BC9D47 /* Extensions */,
+				8A78104A29911C9800D453F3 /* Factory */,
+				D3372EFF298E927D00BC9D47 /* Resources */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8A78104A29911C9800D453F3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				8A78104B29911CA800D453F3 /* ViewControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		8A78104D29911DFD00D453F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A78104E29911E0700D453F3 /* LaunchDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D3372EA9298E811D00BC9D47 = {
+			isa = PBXGroup;
+			children = (
+				D3372EB4298E811D00BC9D47 /* MobiliumSpaceX */,
+				D3372ECB298E811D00BC9D47 /* MobiliumSpaceXTests */,
+				D3372ED5298E811D00BC9D47 /* MobiliumSpaceXUITests */,
+				D3372EB3298E811D00BC9D47 /* Products */,
+				756B7F968E1ABD8A48A37E94 /* Pods */,
+				11F1BCE7516B4BB7C7985B60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3372EB3298E811D00BC9D47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3372EB2298E811D00BC9D47 /* MobiliumSpaceX.app */,
+				D3372EC8298E811D00BC9D47 /* MobiliumSpaceXTests.xctest */,
+				D3372ED2298E811D00BC9D47 /* MobiliumSpaceXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3372EB4298E811D00BC9D47 /* MobiliumSpaceX */ = {
+			isa = PBXGroup;
+			children = (
+				8A781046299115A400D453F3 /* Core */,
+				D3372EE5298E82FE00BC9D47 /* Modules */,
+			);
+			path = MobiliumSpaceX;
+			sourceTree = "<group>";
+		};
+		D3372ECB298E811D00BC9D47 /* MobiliumSpaceXTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3372ECC298E811D00BC9D47 /* MobiliumSpaceXTests.swift */,
+			);
+			path = MobiliumSpaceXTests;
+			sourceTree = "<group>";
+		};
+		D3372ED5298E811D00BC9D47 /* MobiliumSpaceXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3372ED6298E811D00BC9D47 /* MobiliumSpaceXUITests.swift */,
+				D3372ED8298E811D00BC9D47 /* MobiliumSpaceXUITestsLaunchTests.swift */,
+			);
+			path = MobiliumSpaceXUITests;
+			sourceTree = "<group>";
+		};
+		D3372EE5298E82FE00BC9D47 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D3372EE6298E834C00BC9D47 /* List */,
+				D3372EEB298E838F00BC9D47 /* Detail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D3372EE6298E834C00BC9D47 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D359F8EF298ED43700F8AB5D /* ViewModel */,
+				D3372EEA298E838000BC9D47 /* ViewController */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D3372EEA298E838000BC9D47 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3F09E95298E99AB0086F42E /* CellViews */,
+				D3372EFC298E919500BC9D47 /* LaunchListViewController.xib */,
+				D3372EFB298E919500BC9D47 /* LaunchListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D3372EEB298E838F00BC9D47 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8A78104D29911DFD00D453F3 /* ViewModel */,
+				D3F09E9F298EA2F70086F42E /* ViewController */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D3372EF0298E83D400BC9D47 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8A7810422990E9CC00D453F3 /* Endpoint.swift */,
+				D359F8EB298ED24B00F8AB5D /* Service.swift */,
+				D359F8EA298ED16C00F8AB5D /* Response */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D3372EF1298E83E900BC9D47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D39C5DDB298E967700022A96 /* UIColor+Extension.swift */,
+				8A78104729911B2E00D453F3 /* NSObject+Extension.swift */,
+				D33978A0299160E0008E1E46 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D3372EFF298E927D00BC9D47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3372F00298E929900BC9D47 /* Fonts */,
+				D3372EBE298E811D00BC9D47 /* Assets.xcassets */,
+				D3F09E93298E97DD0086F42E /* ColorAssests.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3372F00298E929900BC9D47 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D3372F05298E92B000BC9D47 /* Inter-Black.ttf */,
+				D3372F08298E92B000BC9D47 /* Inter-Bold.ttf */,
+				D3372F01298E92B000BC9D47 /* Inter-ExtraBold.ttf */,
+				D3372F06298E92B000BC9D47 /* Inter-ExtraLight.ttf */,
+				D3372F03298E92B000BC9D47 /* Inter-Light.ttf */,
+				D3372F09298E92B000BC9D47 /* Inter-Medium.ttf */,
+				D3372F07298E92B000BC9D47 /* Inter-Regular.ttf */,
+				D3372F02298E92B000BC9D47 /* Inter-SemiBold.ttf */,
+				D3372F04298E92B000BC9D47 /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D359F8EA298ED16C00F8AB5D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				D359F904298EDC8400F8AB5D /* LaunchResponse.swift */,
+				D3CC37022991456C00000C52 /* PastLaunchResponse.swift */,
+				D3B808BE299249B400E102E4 /* QueryResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		D359F8EF298ED43700F8AB5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D359F8F0298ED44800F8AB5D /* LaunchListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D3F09E95298E99AB0086F42E /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				D3F09E96298E99C60086F42E /* LaunchTableViewCell.swift */,
+				D3F09E97298E99C60086F42E /* LaunchTableViewCell.xib */,
+			);
+			path = CellViews;
+			sourceTree = "<group>";
+		};
+		D3F09E9A298E9C740086F42E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D3F09E9B298E9C870086F42E /* RoundedUIView.swift */,
+				D3F09E9D298E9D7E0086F42E /* RoundedImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D3F09E9F298EA2F70086F42E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3F09EA0298EA9F10086F42E /* LaunchDetailViewController.swift */,
+				D3F09EA1298EA9F10086F42E /* LaunchDetailViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3372EB1298E811D00BC9D47 /* MobiliumSpaceX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3372EDC298E811D00BC9D47 /* Build configuration list for PBXNativeTarget "MobiliumSpaceX" */;
+			buildPhases = (
+				83E421204185F0CAFC55D4E7 /* [CP] Check Pods Manifest.lock */,
+				D3372EAE298E811D00BC9D47 /* Sources */,
+				D3372EAF298E811D00BC9D47 /* Frameworks */,
+				D3372EB0298E811D00BC9D47 /* Resources */,
+				B2547AFD6F6AAD2472FA66DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobiliumSpaceX;
+			productName = MobiliumSpaceX;
+			productReference = D3372EB2298E811D00BC9D47 /* MobiliumSpaceX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3372EC7298E811D00BC9D47 /* MobiliumSpaceXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3372EDF298E811D00BC9D47 /* Build configuration list for PBXNativeTarget "MobiliumSpaceXTests" */;
+			buildPhases = (
+				92A1B74EB272C0767A3A91BC /* [CP] Check Pods Manifest.lock */,
+				D3372EC4298E811D00BC9D47 /* Sources */,
+				D3372EC5298E811D00BC9D47 /* Frameworks */,
+				D3372EC6298E811D00BC9D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3372ECA298E811D00BC9D47 /* PBXTargetDependency */,
+			);
+			name = MobiliumSpaceXTests;
+			productName = MobiliumSpaceXTests;
+			productReference = D3372EC8298E811D00BC9D47 /* MobiliumSpaceXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3372ED1298E811D00BC9D47 /* MobiliumSpaceXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3372EE2298E811D00BC9D47 /* Build configuration list for PBXNativeTarget "MobiliumSpaceXUITests" */;
+			buildPhases = (
+				48A6927F6CDDB275D9582772 /* [CP] Check Pods Manifest.lock */,
+				D3372ECE298E811D00BC9D47 /* Sources */,
+				D3372ECF298E811D00BC9D47 /* Frameworks */,
+				D3372ED0298E811D00BC9D47 /* Resources */,
+				45437F426C8EF4172A0221D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3372ED4298E811D00BC9D47 /* PBXTargetDependency */,
+			);
+			name = MobiliumSpaceXUITests;
+			productName = MobiliumSpaceXUITests;
+			productReference = D3372ED2298E811D00BC9D47 /* MobiliumSpaceXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3372EAA298E811D00BC9D47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D3372EB1298E811D00BC9D47 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					D3372EC7298E811D00BC9D47 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = D3372EB1298E811D00BC9D47;
+					};
+					D3372ED1298E811D00BC9D47 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = D3372EB1298E811D00BC9D47;
+					};
+				};
+			};
+			buildConfigurationList = D3372EAD298E811D00BC9D47 /* Build configuration list for PBXProject "MobiliumSpaceX" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3372EA9298E811D00BC9D47;
+			productRefGroup = D3372EB3298E811D00BC9D47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3372EB1298E811D00BC9D47 /* MobiliumSpaceX */,
+				D3372EC7298E811D00BC9D47 /* MobiliumSpaceXTests */,
+				D3372ED1298E811D00BC9D47 /* MobiliumSpaceXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3372EB0298E811D00BC9D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3372F0C298E92BF00BC9D47 /* Inter-ExtraBold.ttf in Resources */,
+				D3372F10298E92C900BC9D47 /* Inter-Regular.ttf in Resources */,
+				D3372F0D298E92C100BC9D47 /* Inter-ExtraLight.ttf in Resources */,
+				D3372EBF298E811D00BC9D47 /* Assets.xcassets in Resources */,
+				D3F09EA3298EA9F10086F42E /* LaunchDetailViewController.xib in Resources */,
+				D3372F0A298E92B400BC9D47 /* Inter-Black.ttf in Resources */,
+				D3372F12298E92CF00BC9D47 /* Inter-Thin.ttf in Resources */,
+				D3F09E94298E97DD0086F42E /* ColorAssests.xcassets in Resources */,
+				D3372F0F298E92C700BC9D47 /* Inter-Medium.ttf in Resources */,
+				D3372F0B298E92BB00BC9D47 /* Inter-Bold.ttf in Resources */,
+				D3372EFE298E919500BC9D47 /* LaunchListViewController.xib in Resources */,
+				D3372F11298E92CC00BC9D47 /* Inter-SemiBold.ttf in Resources */,
+				D3F09E99298E99C60086F42E /* LaunchTableViewCell.xib in Resources */,
+				D3372F0E298E92C400BC9D47 /* Inter-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3372EC6298E811D00BC9D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3372ED0298E811D00BC9D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45437F426C8EF4172A0221D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobiliumSpaceX-MobiliumSpaceXUITests/Pods-MobiliumSpaceX-MobiliumSpaceXUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobiliumSpaceX-MobiliumSpaceXUITests/Pods-MobiliumSpaceX-MobiliumSpaceXUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobiliumSpaceX-MobiliumSpaceXUITests/Pods-MobiliumSpaceX-MobiliumSpaceXUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A6927F6CDDB275D9582772 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobiliumSpaceX-MobiliumSpaceXUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83E421204185F0CAFC55D4E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobiliumSpaceX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92A1B74EB272C0767A3A91BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobiliumSpaceXTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2547AFD6F6AAD2472FA66DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobiliumSpaceX/Pods-MobiliumSpaceX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobiliumSpaceX/Pods-MobiliumSpaceX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobiliumSpaceX/Pods-MobiliumSpaceX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3372EAE298E811D00BC9D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F09EA2298EA9F10086F42E /* LaunchDetailViewController.swift in Sources */,
+				8A78104F29911E0700D453F3 /* LaunchDetailViewModel.swift in Sources */,
+				8A78104C29911CA800D453F3 /* ViewControllerFactory.swift in Sources */,
+				D359F8F1298ED44800F8AB5D /* LaunchListViewModel.swift in Sources */,
+				D3372EB6298E811D00BC9D47 /* AppDelegate.swift in Sources */,
+				D3CC37032991456C00000C52 /* PastLaunchResponse.swift in Sources */,
+				D3F09E98298E99C60086F42E /* LaunchTableViewCell.swift in Sources */,
+				D359F90B298EDC8400F8AB5D /* LaunchResponse.swift in Sources */,
+				D3372EB8298E811D00BC9D47 /* SceneDelegate.swift in Sources */,
+				D3372EFD298E919500BC9D47 /* LaunchListViewController.swift in Sources */,
+				8A78104829911B2E00D453F3 /* NSObject+Extension.swift in Sources */,
+				8A7810432990E9CC00D453F3 /* Endpoint.swift in Sources */,
+				D359F8EC298ED24B00F8AB5D /* Service.swift in Sources */,
+				D3F09E9C298E9C870086F42E /* RoundedUIView.swift in Sources */,
+				D39C5DDC298E967700022A96 /* UIColor+Extension.swift in Sources */,
+				D3F09E9E298E9D7E0086F42E /* RoundedImageView.swift in Sources */,
+				D33978A1299160E0008E1E46 /* Date+Extension.swift in Sources */,
+				D3B808BF299249B400E102E4 /* QueryResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3372EC4298E811D00BC9D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3372ECD298E811D00BC9D47 /* MobiliumSpaceXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3372ECE298E811D00BC9D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3372ED9298E811D00BC9D47 /* MobiliumSpaceXUITestsLaunchTests.swift in Sources */,
+				D3372ED7298E811D00BC9D47 /* MobiliumSpaceXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3372ECA298E811D00BC9D47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3372EB1298E811D00BC9D47 /* MobiliumSpaceX */;
+			targetProxy = D3372EC9298E811D00BC9D47 /* PBXContainerItemProxy */;
+		};
+		D3372ED4298E811D00BC9D47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3372EB1298E811D00BC9D47 /* MobiliumSpaceX */;
+			targetProxy = D3372ED3298E811D00BC9D47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D3372EDA298E811D00BC9D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3372EDB298E811D00BC9D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3372EDD298E811D00BC9D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127E3DE1F8DBF26444E44D35 /* Pods-MobiliumSpaceX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G44G3TG3CJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobiliumSpaceX/Core/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizefe.MobiliumSpaceX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3372EDE298E811D00BC9D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 905C2B9E255FF8A3554BCDEC /* Pods-MobiliumSpaceX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G44G3TG3CJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobiliumSpaceX/Core/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizefe.MobiliumSpaceX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3372EE0298E811D00BC9D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F9A4EE04F1F8E8B509BCCC9 /* Pods-MobiliumSpaceXTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G44G3TG3CJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizefe.MobiliumSpaceXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiliumSpaceX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobiliumSpaceX";
+			};
+			name = Debug;
+		};
+		D3372EE1298E811D00BC9D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8609B211E51986BE1AF3ADD6 /* Pods-MobiliumSpaceXTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G44G3TG3CJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizefe.MobiliumSpaceXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiliumSpaceX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobiliumSpaceX";
+			};
+			name = Release;
+		};
+		D3372EE3298E811D00BC9D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF47299B9D20AC091BAC112 /* Pods-MobiliumSpaceX-MobiliumSpaceXUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G44G3TG3CJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizefe.MobiliumSpaceXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobiliumSpaceX;
+			};
+			name = Debug;
+		};
+		D3372EE4298E811D00BC9D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB18021A0CD52EF98E02F7B /* Pods-MobiliumSpaceX-MobiliumSpaceXUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G44G3TG3CJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizefe.MobiliumSpaceXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobiliumSpaceX;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3372EAD298E811D00BC9D47 /* Build configuration list for PBXProject "MobiliumSpaceX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3372EDA298E811D00BC9D47 /* Debug */,
+				D3372EDB298E811D00BC9D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3372EDC298E811D00BC9D47 /* Build configuration list for PBXNativeTarget "MobiliumSpaceX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3372EDD298E811D00BC9D47 /* Debug */,
+				D3372EDE298E811D00BC9D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3372EDF298E811D00BC9D47 /* Build configuration list for PBXNativeTarget "MobiliumSpaceXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3372EE0298E811D00BC9D47 /* Debug */,
+				D3372EE1298E811D00BC9D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3372EE2298E811D00BC9D47 /* Build configuration list for PBXNativeTarget "MobiliumSpaceXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3372EE3298E811D00BC9D47 /* Debug */,
+				D3372EE4298E811D00BC9D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3372EAA298E811D00BC9D47 /* Project object */;
+}

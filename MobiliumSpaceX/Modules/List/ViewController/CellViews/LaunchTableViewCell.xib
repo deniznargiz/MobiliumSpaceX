@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LaunchTableViewCell" rowHeight="88" id="KGk-i7-Jjw" customClass="LaunchTableViewCell" customModule="MobiliumSpaceX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVC-qG-WZd" customClass="RoundedUIView" customModule="MobiliumSpaceX" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-19-ZTA">
+                                <rect key="frame" x="16" y="16" width="288" height="44"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_product" translatesAutoresizingMaskIntoConstraints="NO" id="7ph-zx-XZP" customClass="RoundedImageView" customModule="MobiliumSpaceX" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="gMI-Na-Qbh"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Sxy-Hq-Zoq">
+                                        <rect key="frame" x="60" y="0.0" width="197" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fau-ok-6MR">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="22"/>
+                                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
+                                                <color key="textColor" name="ColorBlack100"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BE-Ca-fb9">
+                                                <rect key="frame" x="0.0" y="22" width="197" height="22"/>
+                                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="13"/>
+                                                <color key="textColor" name="ColorBlack50"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIk-cd-XRb">
+                                        <rect key="frame" x="273" y="0.0" width="15" height="44"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chevron" translatesAutoresizingMaskIntoConstraints="NO" id="087-Ag-66k">
+                                                <rect key="frame" x="3.6666666666666856" y="14" width="8" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="8" id="An3-za-hkn"/>
+                                                    <constraint firstAttribute="height" constant="16" id="k1x-An-6EN"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="087-Ag-66k" firstAttribute="centerX" secondItem="eIk-cd-XRb" secondAttribute="centerX" id="Gme-iM-gxM"/>
+                                            <constraint firstAttribute="width" constant="15" id="VXK-Fd-k6n"/>
+                                            <constraint firstItem="087-Ag-66k" firstAttribute="centerY" secondItem="eIk-cd-XRb" secondAttribute="centerY" id="fh8-oD-qiG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aaa-19-ZTA" secondAttribute="bottom" constant="16" id="8sy-1k-EAg"/>
+                            <constraint firstItem="aaa-19-ZTA" firstAttribute="top" secondItem="kVC-qG-WZd" secondAttribute="top" constant="16" id="9p5-oC-vRy"/>
+                            <constraint firstItem="aaa-19-ZTA" firstAttribute="leading" secondItem="kVC-qG-WZd" secondAttribute="leading" constant="16" id="dhy-ms-A4e"/>
+                            <constraint firstAttribute="trailing" secondItem="aaa-19-ZTA" secondAttribute="trailing" constant="16" id="re8-wb-5UR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="ColorBlack20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kVC-qG-WZd" secondAttribute="bottom" constant="12" id="9Oy-j2-ihJ"/>
+                    <constraint firstItem="kVC-qG-WZd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kKb-XZ-Jle"/>
+                    <constraint firstAttribute="trailing" secondItem="kVC-qG-WZd" secondAttribute="trailing" id="koR-Fu-9rG"/>
+                    <constraint firstItem="kVC-qG-WZd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lDK-L4-R1F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="7ph-zx-XZP" id="DA7-w4-HBG"/>
+                <outlet property="lblSubTitle" destination="4BE-Ca-fb9" id="bzE-EZ-LS7"/>
+                <outlet property="lblTitle" destination="Fau-ok-6MR" id="rAA-9w-dGh"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="21"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="7ph-zx-XZP">
+            <size key="intrinsicContentSize" width="44" height="44"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_chevron" width="7" height="12"/>
+        <image name="img_product" width="44" height="44"/>
+        <namedColor name="ColorBlack100">
+            <color red="0.093999996781349182" green="0.10599999874830246" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="ColorBlack20">
+            <color red="0.95300000905990601" green="0.9570000171661377" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="ColorBlack50">
+            <color red="0.50999999046325684" green="0.5220000147819519" blue="0.63099998235702515" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.4.4)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - Toast-Swift (5.0.1)
+  - Wormholy (1.6.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - SDWebImage
+  - Toast-Swift
+  - Wormholy
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SDWebImage
+    - Toast-Swift
+    - Wormholy
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
+
+PODFILE CHECKSUM: 8bbe5ea3750b6fce4f4e7063812103d081ff95e9
+
+COCOAPODS: 1.11.3
