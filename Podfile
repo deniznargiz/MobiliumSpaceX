@@ -9,6 +9,7 @@ target 'MobiliumSpaceX' do
   pod 'Alamofire'
   pod 'SDWebImage'
   pod 'Toast-Swift'
+  pod 'Wormholy'
 
   target 'MobiliumSpaceXTests' do
     inherit! :search_paths

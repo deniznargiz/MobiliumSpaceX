@@ -26,11 +26,11 @@ final class LaunchListViewModel {
     weak var delegate: LaunchListViewModelDelegate?
     
     private(set) var upcomingLaunches = [LaunchResponse]()
-    private(set) var pastLaunches = [PastLaunchResponse]()
+    private(set) var pastLaunches = [LaunchResponse]()
     private var queryResponse: QueryResponse!
 }
 
-
+//MARK: 
 extension LaunchListViewModel {
     
     func getUpcomingLaunches() {
@@ -45,7 +45,7 @@ extension LaunchListViewModel {
 
     func getPastLaunches() {
         setDefaults()
-        service.request(api: Endpoint.past) { (response: [PastLaunchResponse]) in
+        service.request(api: Endpoint.past) { (response: [LaunchResponse]) in
             self.pastLaunches = response
             self.delegate?.pastLaunchesDidSet()
         } failure: { err in
@@ -55,12 +55,13 @@ extension LaunchListViewModel {
     
     func getQuery(isUpcoming: Bool) {
         service.query(api: Endpoint.query, page: queryPage) { (response: QueryResponse) in
+            
+            let mapped = response.docs?.compactMap({ $0 }) ?? []
+
             if isUpcoming {
-                let mapped = response.docs?.compactMap({ $0.launchResponse }) ?? []
                 self.upcomingLaunches.append(contentsOf: mapped)
                 self.delegate?.upcomingLaunchesDidSet()
             } else {
-                let mapped = response.docs?.compactMap({ $0.pastLaunchResponse }) ?? []
                 self.pastLaunches.append(contentsOf: mapped)
                 self.delegate?.pastLaunchesDidSet()
             }

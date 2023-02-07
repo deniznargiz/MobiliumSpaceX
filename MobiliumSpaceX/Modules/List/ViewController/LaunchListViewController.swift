@@ -42,8 +42,6 @@ class LaunchListViewController: UIViewController {
     }
     
     //MARK: Actions
- 
-    
     @IBAction func actSegmentControl(_ sender: UISegmentedControl) {
         tableViewLaunches.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
         loadingIndicator.startAnimating()
@@ -117,7 +115,7 @@ extension LaunchListViewController: UITableViewDataSource,UITableViewDelegate{
             let item = viewModel.pastLaunches[indexPath.row]
             cell.lblTitle.text = item.name ?? ""
             
-            if let date = Date.date(from: item.dateUtc) {
+            if let date = Date.date(from: item.date_utc) {
                 cell.lblSubTitle.text = date.customDateWithHour
             }
             
@@ -134,8 +132,15 @@ extension LaunchListViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == viewModel.upcomingLaunches.count - 1 {
-            viewModel.getQuery(isUpcoming: (segmentControl.selectedSegmentIndex == 0))
+        
+        if segmentControl.selectedSegmentIndex == 0 {
+            if indexPath.row == viewModel.upcomingLaunches.count - 1 {
+                viewModel.getQuery(isUpcoming: true)
+            }
+        } else {
+            if indexPath.row == viewModel.pastLaunches.count - 1 {
+                viewModel.getQuery(isUpcoming: false)
+            }
         }
     }
     

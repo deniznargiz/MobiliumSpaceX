@@ -58,7 +58,6 @@ class LaunchDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //Swipe for back
         navigationController?.interactivePopGestureRecognizer?.delegate = self
         
         viewModel.delegate = self
@@ -95,9 +94,9 @@ class LaunchDetailViewController: UIViewController {
             
             if let cores = viewModel.launchDetail.cores{
                 let core = cores[0]
-                lblLandingAttempt.text = (core.landing_attempt != nil) ? String(core.landing_attempt!): "-"
-                lblLandingType.text = (core.landing_type != nil) ? String(core.landing_type!): "-"
-                lblLandingSuccess.text = (core.landing_success != nil) ? String(core.landing_success!): "-"
+                lblLandingAttempt.text = (core.landing_attempt != nil) ? String(core.landing_attempt!) : "-"
+                lblLandingType.text = (core.landing_type != nil) ? String(core.landing_type!) : "-"
+                lblLandingSuccess.text = (core.landing_success != nil) ? String(core.landing_success!) : "-"
             } else {
                 lblLandingAttempt.text =  "-"
                 lblLandingType.text = "-"
@@ -158,9 +157,9 @@ class LaunchDetailViewController: UIViewController {
             
             if let cores = viewModel.pastLaunchDetail.cores{
                 let core = cores[0]
-                lblLandingAttempt.text = (core.landing_attempt != nil) ? String(core.landing_attempt!): "-"
-                lblLandingType.text = (core.landing_type != nil) ? String(core.landing_type!): "-"
-                lblLandingSuccess.text = (core.landing_success != nil) ? String(core.landing_success!): "-"
+                lblLandingAttempt.text = (core.landing_attempt != nil) ? String(core.landing_attempt!) : "-"
+                lblLandingType.text = (core.landing_type != nil) ? String(core.landing_type!) : "-"
+                lblLandingSuccess.text = (core.landing_success != nil) ? String(core.landing_success!) : "-"
             } else {
                 lblLandingAttempt.text =  "-"
                 lblLandingType.text = "-"
